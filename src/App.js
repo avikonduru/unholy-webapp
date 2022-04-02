@@ -12,21 +12,28 @@ const App = () => (
   <div className="App">
     <Layout style={{backgroundColor: 'black', color: 'white', height: '100vh'}}>
       <Header style={{backgroundColor: 'black', alignItems: 'center', justifyContent: 'center'}}>
-        <motion.div
-          animate={{
-            x: 0,
-            y: 10,
-            scale: 1,
-            rotate: 0,
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "reverse",
-            duration: 2
-          }}
-        >
-          <span style={{fontWeight: 'bold', fontSize: 35, color: 'white'}}>UnHoly</span>
-        </motion.div>
+        <Row>
+          <Col span={12}>
+            <motion.div
+              animate={{
+                x: 0,
+                y: [10,-10],
+                scale: 1,
+                rotate: 0,
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 2
+              }}
+            >
+              <span style={{fontWeight: 'bold', fontSize: 35, color: 'white'}}>UnHoly</span>
+            </motion.div>
+          </Col>
+          <Col span={12} style={{textAlign: 'right'}}>
+            <span style={{fontWeight: 'bold', fontSize: 20, color: 'white'}}>Connect Wallet</span>
+          </Col>
+        </Row>
       </Header>
       <Content style={{
         backgroundColor: 'black',
@@ -42,24 +49,24 @@ const App = () => (
               <Col span={12}>
                 <motion.button
                   class="option_1_button"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  Option 1
+                  Mint Legendary NFT
                 </motion.button>
               </Col>
               <Col span={12}>
                 <motion.button
                   class="option_2_button"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  Option 2
+                  Mint Acolyte NFT
                 </motion.button>
               </Col>
             </Row>
 
-            <Row>
+            {/* <Row>
               <Col span={24}>
                 <motion.button
                   class="mint_button"
@@ -69,7 +76,7 @@ const App = () => (
                   MINT
                 </motion.button>
               </Col>
-            </Row>
+            </Row> */}
           </div>
       </Content>
       <Footer style={{backgroundColor: 'black', color: 'white', textAlign: 'center'}}>And I saw when the Lamb opened one of the seals, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see.</Footer>
