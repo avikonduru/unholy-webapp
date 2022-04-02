@@ -1,0 +1,64 @@
+@import '~antd/dist/antd.css';
+
+.option_1_button {
+  padding: 55px 75px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #1990FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0px #999;
+}
+
+.option_1_button:hover {background-color: #19abff}
+
+.option_1_button:active {
+  background-color: #1956ff;
+  box-shadow: 0 0px #666;
+}
+
+.option_2_button {
+  padding: 55px 75px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ff5353;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0px #999;
+}
+
+.option_2_button:hover {background-color: #ff6d6d}
+
+.option_2_button:active {
+  background-color: #f83d3d;
+  box-shadow: 0 0px #666;
+}
+
+.mint_button {
+  padding: 35px 45px;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #800080;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0px #999;
+}
+
+.mint_button:hover {background-color: #9e019e}
+
+.mint_button:active {
+  background-color: #610061;
+  box-shadow: 0 0px #666;
+}
